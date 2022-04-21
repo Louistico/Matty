@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/title_setting" />
+
+    <item
+        android:id="@+id/navigation_sale"
+        android:icon="@drawable/wallet"
+        android:title="@string/title_sale" />
+
+    <item
+        android:id="@+id/navigation_box"
+        android:icon="@drawable/ic_baseline_point_of_sale_24"
+        android:title="@string/title_box" />
+    <item
+        android:id="@+id/navigation_catalogue"
+        android:icon="@drawable/ic_baseline_catalogue_search_24"
+        android:title="@string/title_catalogue" />
+
+</menu>
