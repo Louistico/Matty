@@ -8,12 +8,20 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.matty.databinding.FragmentSaleBinding
 import com.google.zxing.integration.android.IntentIntegrator
 
 class SaleFragment : Fragment() {
 
+
+
     private var _binding: FragmentSaleBinding? = null
+
+    //Recycler
+    private var layoutManager: RecyclerView.LayoutManager? = null
+    private var adapter: RecyclerView.Adapter<SaleAdapter.ViewHolder>? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,25 +32,51 @@ class SaleFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
+
+
         //Añadir función de escaner a un botón
         val bind = FragmentSaleBinding.inflate(layoutInflater)
         bind.camsc.setOnClickListener {
             escanear()
+
+
         }
+        bind.recycl.apply {
+            layoutManager = LinearLayoutManager(activity)
+            adapter = SaleAdapter()
+        }
+
         //Menú
         val homeViewModel =
             ViewModelProvider(this).get(SaleViewModel::class.java)
 
 
-        val dashboardViewModel =
-            ViewModelProvider(this).get(SaleViewModel::class.java)
-
         _binding = FragmentSaleBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
 
-        return root
+        /*val textView: TextView = binding.textHome
+        homeViewModel.text.observe(viewLifecycleOwner) {
+             textView.text = it
+         }*/
+
+        return bind.root
+
+
+
+
+
+
+
     }
+
+    override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
+
+        super.onViewCreated(itemView, savedInstanceState)
+
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
 
 
@@ -77,10 +111,12 @@ class SaleFragment : Fragment() {
 
     }
 
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
     fun escanear() {
 
         val intentIntegrator = IntentIntegrator.forSupportFragment(this)
@@ -91,5 +127,6 @@ class SaleFragment : Fragment() {
         intentIntegrator.setBeepEnabled(true)
         intentIntegrator.initiateScan()
     }
+
 
 }
