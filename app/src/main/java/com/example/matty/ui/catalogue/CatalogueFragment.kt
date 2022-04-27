@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.matty.R
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class CatalogueFragment : Fragment() {
 
@@ -20,6 +22,9 @@ class CatalogueFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        /*val retrofit = Retrofit.Builder().baseUrl("https://jsonplaceholder.typicode.com/users")
+            .addConverterFactory(GsonConverterFactory.create()).build()*/
         return inflater.inflate(R.layout.fragment_catalogue, container, false)
     }
 
