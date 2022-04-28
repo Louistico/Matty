@@ -2,6 +2,7 @@ package com.example.matty
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -36,5 +37,9 @@ class Menu : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
+    }
+    fun Configurar(view: View){
+        val intentConf= Intent(this,Configurar::class.java)
+        startActivity(intentConf)
     }
 }

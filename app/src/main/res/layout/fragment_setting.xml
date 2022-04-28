@@ -168,7 +168,7 @@
 
     <TextView
         android:id="@+id/textTitulo"
-        android:layout_width="229dp"
+        android:layout_width="wrap_content"
         android:layout_height="44dp"
         android:fontFamily="@font/alegreya_sc_bold"
         android:text="CONFIGURACIÓN"
@@ -181,5 +181,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.085" />
+
+    <ImageButton
+        android:id="@+id/imageConf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFF"
+        android:onClick="Configurar"
+        android:src="@drawable/ic_baseline_settings_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.277" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
