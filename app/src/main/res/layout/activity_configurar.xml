@@ -60,6 +60,7 @@
         android:id="@+id/textNom"
         android:layout_width="141dp"
         android:layout_height="24dp"
+        android:layout_marginTop="16dp"
         android:text="Nombre "
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -75,6 +76,7 @@
         android:id="@+id/textMode"
         android:layout_width="141dp"
         android:layout_height="24dp"
+        android:layout_marginTop="16dp"
         android:text="Modelo"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -91,6 +93,7 @@
         android:id="@+id/textIInterfaz"
         android:layout_width="141dp"
         android:layout_height="24dp"
+        android:layout_marginTop="16dp"
         android:text="Interfaz"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -104,20 +107,21 @@
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="375dp"
-        android:layout_height="71dp"
+        android:layout_width="366dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintHorizontal_bias="0.622"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.425">
+        app:layout_constraintVertical_bias="0.436">
 
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView"
-            android:layout_width="377dp"
-            android:layout_height="49dp"
+            android:layout_width="379dp"
+            android:layout_height="53dp"
             android:inputType="none"
             android:text="Tamaño de Papel" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -126,21 +130,23 @@
         android:id="@+id/textConf"
         android:layout_width="162dp"
         android:layout_height="46dp"
+        android:layout_marginTop="16dp"
         android:text="Configuración Avanzada"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.116"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
+        app:layout_constraintVertical_bias="0.816" />
 
     <TextView
         android:id="@+id/textServicios"
         android:layout_width="148dp"
         android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:text="Servicios de impresión"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -156,6 +162,7 @@
         android:id="@+id/textRecibos"
         android:layout_width="148dp"
         android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:text="Imprimir recibos y Facturas"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -171,6 +178,7 @@
         android:id="@+id/textRecibos2"
         android:layout_width="198dp"
         android:layout_height="41dp"
+        android:layout_marginTop="16dp"
         android:text="Imprimir recibos automátomaticamente"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
