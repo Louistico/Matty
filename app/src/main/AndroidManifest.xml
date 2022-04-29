@@ -29,6 +29,9 @@
             android:name=".Payment"
             android:exported="false" />
         <activity
+            android:name=".Copy"
+            android:exported="false" />
+        <activity
             android:name=".Menu"
             android:exported="true"
             android:label="@string/title_activity_menu" />
