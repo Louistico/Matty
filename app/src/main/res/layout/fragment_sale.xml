@@ -144,7 +144,7 @@
         app:layout_constraintTop_toBottomOf="@+id/recycl">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonpay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -160,7 +160,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
             android:text="Encargar"
-            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintStart_toEndOf="@+id/buttonpay"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button

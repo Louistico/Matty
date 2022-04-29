@@ -29,6 +29,7 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="50dp"
         android:fontFamily="@font/alegreya_sc_bold"
+        android:onClick="onClickMethods"
         android:text="Tarjeta de crédito/debito"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,6 +43,7 @@
         android:layout_marginTop="13dp"
         android:layout_marginEnd="50dp"
         android:fontFamily="@font/alegreya_sc_bold"
+        android:onClick="onClickMethods"
         android:text="Transferencia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,6 +57,7 @@
         android:layout_marginTop="13dp"
         android:layout_marginEnd="50dp"
         android:fontFamily="@font/alegreya_sc_bold"
+        android:onClick="onClickMethods"
         android:text="A crédito"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,6 +71,7 @@
         android:layout_marginTop="13dp"
         android:layout_marginEnd="50dp"
         android:fontFamily="@font/alegreya_sc_bold"
+        android:onClick="onClickMethods"
         android:text="Talón bancario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,5 +86,6 @@
         app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button9"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

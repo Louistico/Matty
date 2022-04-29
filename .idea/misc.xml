@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/JoseOrozco/AndroidStudioProjects/Matty/app/src/main/res/layout/fragment_catalogue.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/JoseOrozco/AndroidStudioProjects/Matty/app/src/main/res/layout/fragment_sale.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/JoseOrozco/AndroidStudioProjects/Matty/app/src/main/res/layout/paymentcopy.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/JoseOrozco/AndroidStudioProjects/Matty/app/src/main/res/layout/paymentmethods.xml" value="0.1956521739130435" />
         <entry key="..\:/Users/LouisOsio/AndroidStudioProjects/Matty/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2085" />
         <entry key="..\:/Users/LouisOsio/AndroidStudioProjects/Matty/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2085" />
         <entry key="..\:/Users/LouisOsio/AndroidStudioProjects/Matty/app/src/main/res/layout/activity_main.xml" value="0.18" />
