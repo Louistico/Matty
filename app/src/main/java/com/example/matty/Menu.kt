@@ -42,4 +42,9 @@ class Menu : AppCompatActivity() {
         val intentConf= Intent(this,Configurar::class.java)
         startActivity(intentConf)
     }
+    fun Cobrar(view: View){
+        val intentCo= Intent(this, Payment::class.java)
+        startActivity(intentCo)
+    }
+
 }

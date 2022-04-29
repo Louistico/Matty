@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.matty.Payment
 import com.example.matty.databinding.FragmentSaleBinding
 import com.google.zxing.integration.android.IntentIntegrator
 
@@ -131,6 +132,7 @@ class SaleFragment : Fragment() {
         intentIntegrator.setBeepEnabled(true)
         intentIntegrator.initiateScan()
     }
+
 
 
 }
