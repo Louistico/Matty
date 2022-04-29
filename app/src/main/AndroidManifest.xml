@@ -17,8 +17,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Matty">
         <activity
-            android:name=".Configurar"
+            android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".Configurar"
+            android:exported="true" />
         <activity
             android:name=".Scanner"
             android:exported="false" />
