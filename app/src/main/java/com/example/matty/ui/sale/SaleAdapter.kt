@@ -1,5 +1,6 @@
 package com.example.matty.ui.sale
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -96,6 +97,12 @@ class SaleAdapter  : RecyclerView.Adapter<SaleAdapter.ViewHolder>() {
         viewHolder.itemunit.text = unidades[i]
         viewHolder.itemprecio.text = precio[i]
         viewHolder.itempic.setImageResource(foto[i])
+
+
+        if((i % 2) == 0)
+            viewHolder.itemView.setBackgroundColor(Color.GRAY)
+        else
+            viewHolder.itemView.setBackgroundColor(Color.WHITE)
 
 
 
