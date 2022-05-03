@@ -1,6 +1,8 @@
 package com.example.matty
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 
 class Payment : AppCompatActivity() {
@@ -9,6 +11,20 @@ class Payment : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.paymentmethods)
 
+
+
+    }
+
+    fun Return(view:View){
+        onBackPressed()
+    }
+    fun Atras(view: View){
+        onBackPressed()
+    }
+
+    fun onClickMethods(view: View){
+        val intentconfirm= Intent(this, ConfirmP::class.java)
+        startActivity(intentconfirm)
 
     }
 }

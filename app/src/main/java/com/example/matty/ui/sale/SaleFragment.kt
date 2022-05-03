@@ -5,11 +5,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.matty.Payment
 import com.example.matty.databinding.FragmentSaleBinding
 import com.google.zxing.integration.android.IntentIntegrator
 
@@ -42,6 +44,8 @@ class SaleFragment : Fragment() {
 
 
         }
+
+
         bind.recycl.apply {
             layoutManager = LinearLayoutManager(activity)
             adapter = SaleAdapter()
@@ -70,6 +74,7 @@ class SaleFragment : Fragment() {
 
 
     }
+
 
     override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
 
@@ -127,6 +132,7 @@ class SaleFragment : Fragment() {
         intentIntegrator.setBeepEnabled(true)
         intentIntegrator.initiateScan()
     }
+
 
 
 }
