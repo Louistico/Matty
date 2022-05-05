@@ -13,17 +13,7 @@ class Configurar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityConfigurarBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val tamaño = resources.getStringArray(R.array.impresora)
-        val adapter = ArrayAdapter(
-            this,
-            R.layout.list_item,
-            tamaño
-        )
 
-        with(binding.autoCompleteTextView) {
-            setAdapter(adapter)
-
-        }
     }
 
 

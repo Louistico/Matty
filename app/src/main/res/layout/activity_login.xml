@@ -15,7 +15,6 @@
         android:fontFamily="@font/alegreya_sc_bold"
         android:text="MATY"
         android:textAlignment="center"
-
         android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,7 +33,7 @@
         android:drawableStart="@drawable/ic_baseline_account_circle_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Correo Electrónico"
+        android:hint="Usuario"
         android:inputType="textPersonName"
         android:paddingStart="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
