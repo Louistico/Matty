@@ -21,6 +21,10 @@ class Payment : AppCompatActivity() {
     fun Atras(view: View){
         onBackPressed()
     }
+    fun Sale(view:View){
+        val intentSale=Intent(this,Menu::class.java)
+        startActivity(intentSale)
+    }
 
     fun onClickMethods(view: View){
         val intentconfirm= Intent(this, ConfirmP::class.java)
