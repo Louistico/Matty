@@ -46,5 +46,9 @@ class Menu : AppCompatActivity() {
         val intentCo= Intent(this, Payment::class.java)
         startActivity(intentCo)
     }
+    fun onClickClientes(view: View){
+        val intentCli=Intent(this,Clients::class.java)
+        startActivity(intentCli)
+    }
 
 }
