@@ -11,13 +11,13 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycl"
-        android:layout_width="match_parent"
-        android:layout_height="186dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="390dp"
+        android:layout_height="379dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -33,7 +33,7 @@
             android:id="@+id/editTextTextPersonName"
             android:layout_width="305dp"
             android:layout_height="54dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="4dp"
             android:background="#51515151"
             android:ems="10"
             android:hint="Código, nombre de articulo"
@@ -41,13 +41,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
             android:id="@+id/camsc"
             android:layout_width="62dp"
             android:layout_height="54dp"
             android:layout_gravity="top|end"
+            android:layout_marginStart="16dp"
             android:background="#51515151"
             android:src="@drawable/ic_baseline_camera_alt_24"
             app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
@@ -56,99 +57,13 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="147dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
-
-        <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="100dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
-            android:contentDescription="carnaval"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/spinner" />
-
-        <TextView
-            android:id="@+id/textHome"
-            android:layout_width="133dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="96dp"
-            android:layout_marginTop="8dp"
-            android:text="Código Empleado:"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="123dp"
-            android:layout_height="28dp"
-            android:layout_marginStart="96dp"
-            android:layout_marginTop="12dp"
-            android:text="Descuento:"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textHome" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="61dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="96dp"
-            android:layout_marginTop="12dp"
-            android:text="Cliente:"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="100dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="Carnaval"
-            app:layout_constraintStart_toEndOf="@+id/textHome"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Spinner
-            android:id="@+id/spinner3"
-            android:layout_width="100dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="carnaval"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/spinner2" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="22dp"
-        android:background="#51515151"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"></LinearLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recycl"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/buttonpay"
@@ -198,6 +113,57 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button3"
             app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="389dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycl">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Total = 20"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.954" />
+
+        <LinearLayout
+            android:layout_width="251dp"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="70dp"
+                android:layout_height="29dp"
+                android:text="Cliente:" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="200dp"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="63dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_search_24" />
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

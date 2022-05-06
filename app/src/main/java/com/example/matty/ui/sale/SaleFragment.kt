@@ -103,8 +103,7 @@ class SaleFragment : Fragment() {
 
                 ).show()
 
-                //textView.setText(result.contents)
-                binding.textHome.text = resultado
+
 
 
             }
