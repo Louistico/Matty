@@ -1,7 +1,10 @@
 package com.example.matty
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.matty.ui.sale.SaleFragment
 
 class Copy : AppCompatActivity() {
 
@@ -11,4 +14,14 @@ class Copy : AppCompatActivity() {
 
 
     }
+    fun onClickCobrar(view: View){
+        val intentCobrar= Intent(this,ConfirmP::class.java)
+        startActivity(intentCobrar)
     }
+    fun onClickSale(view:View){
+        val intentSale=Intent(this, Menu::class.java)
+        startActivity(intentSale)
+
+    }
+
+}
